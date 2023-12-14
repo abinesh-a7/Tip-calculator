@@ -45,9 +45,9 @@ const increasePeople = () => {
 
 const decreasePeople = () => {
   // condition to stop less than 1
-    if (numberOfPeople <=1){
-        return
-    }
+  if (numberOfPeople <= 1) {
+    return;
+  }
   // decrement the people
   numberOfPeople -= 1;
 
@@ -59,10 +59,11 @@ const decreasePeople = () => {
 
 // select reset btn
 
-let resetbtn=document.getElementById('reset')
+let resetbtn = document.getElementById("reset");
 
-resetbtn.addEventListener('click',()=>{
-  billTotalInput.value=''
-  tipInput.value=''
-  perPersonTotal.innerText = `$0.00`;
-})
+resetbtn.addEventListener("click", () => {
+  billTotalInput.value = "";
+  tipInput.value = "";
+  numberOfPeopleDiv.innerText = "1";
+  perPersonTotalDiv.innerText = '$0.00';
+});
