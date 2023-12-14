@@ -56,3 +56,13 @@ const decreasePeople = () => {
 
   calculateBill();
 };
+
+// select reset btn
+
+let resetbtn=document.getElementById('reset')
+
+resetbtn.addEventListener('click',()=>{
+  billTotalInput.value=''
+  tipInput.value=''
+  perPersonTotal.innerText = `$0.00`;
+})
